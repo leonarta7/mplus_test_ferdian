@@ -1,6 +1,6 @@
 ## Installation Instruction
 
-1. Make sure your environment has composer installed. If not, run this command on the project directory inside your local environment with composer
+1. Make sure your environment has composer installed. If not, run this command on the project directory inside your local environment with composer, then upload the project to your designated environment
 ```bash
 composer install
 ```
