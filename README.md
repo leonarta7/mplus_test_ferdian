@@ -23,7 +23,19 @@ DB_PASSWORD=
 ```bash
 php artisan migrate
 ```
-8. Run the project using this command or according to your environment configuration
+8. Add these parameters and fill it with your credentials accordingly
+```bash
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+
+FACEBOOK_CLIENT_ID=
+FACEBOOK_CLIENT_SECRET=
+```
+9. Run this command on the project's directory
+```bash
+php artisan jwt:secret
+```
+10. Run the project using this command or according to your environment configuration
 ```bash
 php artisan serve
 ```
