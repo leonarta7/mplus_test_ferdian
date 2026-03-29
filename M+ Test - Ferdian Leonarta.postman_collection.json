@@ -86,7 +86,10 @@
 							]
 						},
 						"url": {
-							"raw": "/api/v1/auth/login",
+							"raw": "{{base_url}}/api/v1/auth/login",
+							"host": [
+								"{{base_url}}"
+							],
 							"path": [
 								"api",
 								"v1",
@@ -228,7 +231,10 @@
 							]
 						},
 						"url": {
-							"raw": "/api/v1/auth/register",
+							"raw": "{{base_url}}/api/v1/auth/register",
+							"host": [
+								"{{base_url}}"
+							],
 							"path": [
 								"api",
 								"v1",
@@ -365,7 +371,10 @@
 							]
 						},
 						"url": {
-							"raw": "/api/v1/auth/token/refresh",
+							"raw": "{{base_url}}/api/v1/auth/token/refresh",
+							"host": [
+								"{{base_url}}"
+							],
 							"path": [
 								"api",
 								"v1",
@@ -478,7 +487,10 @@
 							]
 						},
 						"url": {
-							"raw": "/api/v1/auth/logout",
+							"raw": "{{base_url}}/api/v1/auth/logout",
+							"host": [
+								"{{base_url}}"
+							],
 							"path": [
 								"api",
 								"v1",
@@ -593,7 +605,10 @@
 							]
 						},
 						"url": {
-							"raw": "/api/v1/user/profile",
+							"raw": "{{base_url}}/api/v1/user/profile",
+							"host": [
+								"{{base_url}}"
+							],
 							"path": [
 								"api",
 								"v1",
@@ -720,7 +735,10 @@
 							}
 						},
 						"url": {
-							"raw": "/api/v1/user/profile",
+							"raw": "{{base_url}}/api/v1/user/profile",
+							"host": [
+								"{{base_url}}"
+							],
 							"path": [
 								"api",
 								"v1",
@@ -766,6 +784,46 @@
 					"body": "{\n    \"success\": true,\n    \"message\": \"User info updated successfully\",\n    \"data\": []\n}"
 				}
 			]
+		},
+		{
+			"name": "Google Callback",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v1/auth/google",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"google"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Facebook Callback",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v1/auth/facebook",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"facebook"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
